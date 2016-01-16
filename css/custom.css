@@ -175,7 +175,7 @@ header, #header-background {
 .com-details-container {
     padding-top: 60px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     border-bottom: 1px solid rgba(255,255,255,0.04);
     overflow: visible;
     opacity: 0.96;
