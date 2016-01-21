@@ -157,6 +157,12 @@ header, #header-background {
     overflow: scroll;
 }
 
+.hl-container {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
 .swiper-container {
     width: 100%;
     height: 100vh!important;
