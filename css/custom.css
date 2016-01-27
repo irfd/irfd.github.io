@@ -1,3 +1,69 @@
+/* Small Nav */
+
+#toggle {
+    padding-top: 36px;
+    padding-bottom: 31px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#small-nav {
+    display: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#small-nav-background {
+    display: none;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 334px;
+    background-color: #101111;
+    opacity: 0.96;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    z-index: 100;
+}
+
+@media screen and (min-width: 1020px) {
+    .icon-bars, #small-nav, #small-nav-background {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    #nav {
+        display: none;
+    }
+    
+    #logo-wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 0!important;
+    }
+    
+    #logo {
+        padding-right: 0!important;
+    }
+    .navbar-item {
+        display: block;
+        width: 100%;
+        line-height: 50px;
+    }
+
+    .navbar-link {
+        padding: 20px!important;
+    }
+}
+
+
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -18,25 +84,27 @@ header, #header-background {
 }
 
 #logo-wrapper {
-    height: 90px;
+    float: left;
+    height: 91px;
 }
 
 #logo {
     height: 40px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 20px;
     opacity: 0.99;
 }
 
 
 /* Nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 #nav {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    max-width: 680px;
     padding-top: 32px;
-    height: 90px;
 }
 
 #nav-container {
@@ -56,11 +124,10 @@ header, #header-background {
 .navbar-link {
     text-transform: uppercase;
     text-decoration: none;
-    height: 30px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
     vertical-align: middle;
     font-size: 1em;
     letter-spacing: 0.035em;
@@ -72,9 +139,12 @@ header, #header-background {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
     text-align: right;
-    padding-top: 32px;
-    height: 90px;
+    padding-top: 33px;
 }
 
 .social-list {
@@ -87,9 +157,8 @@ header, #header-background {
 
 .socicon-facebook, .socicon-instagram, .socicon-pinterest {
     text-decoration: none;
-    height: 30px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 37px;
+    padding-bottom: 37px;
     padding-left: 20px;
     vertical-align: middle;
     font-size: 0.9em;
@@ -155,6 +224,12 @@ header, #header-background {
     width: 100%;
     height: 540px;
     overflow: scroll;
+}
+
+@media screen and (max-width: 1020px) {
+    .headline-container, .headline-background-image, .headline-colour-overlay {
+        height: 100vh!important;
+    }
 }
 
 .hl-container {
