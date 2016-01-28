@@ -152,14 +152,14 @@
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: 50px;
-  height: 50px;
-  margin-top: -25px;
+  width: 40px!important;
+  height: 180px!important;
+  margin-top: -90px!important;
   z-index: 10;
   cursor: pointer;
-  -moz-background-size: 40px 40px;
-  -webkit-background-size: 40px 40px;
-  background-size: 40px 40px;
+  -moz-background-size: 35px 35px!important;
+  -webkit-background-size: 35px 35px!important;
+  background-size: 35px 35px!important;
   background-position: center;
   background-repeat: no-repeat;
 }
