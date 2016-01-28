@@ -498,11 +498,11 @@ footer {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .swiper-slide, .headline-background-image, .hl-background-image, .hl-background-image-ian {
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
-            -moz-animation: fadein 4s; /* Firefox */
-            -ms-animation: fadein 4s; /* Internet Explorer */
-            -o-animation: fadein 4s; /* Opera */
-            animation: fadein 4s;
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -536,4 +536,10 @@ footer {
 
 #swiper {
     background-color: #e1efef;
+}
+
+#in-swiper {
+    display: block;
+    margin-top: 0px;
+    z-index: 0;
 }

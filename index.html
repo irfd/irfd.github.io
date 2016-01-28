@@ -42,10 +42,19 @@
   <!-- Small Nav Toggle
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script>
+    <script>
         $(document).ready(function(){
             $("#toggle, .toggle-esc, #d").click(function(){
                 $("#small-nav, #small-nav-background").toggle();
+            });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            $('selector').waitForImages({
+                finished:function(){$(this).slideUp();},
+                waitForAll:true
             });
         });
     </script>
@@ -102,7 +111,7 @@
         <div class="swiper-button-next swiper-button-white"></div>
         <div class="swiper-button-prev swiper-button-white"></div>
     </div>
-    <div id=swiper>
+    <div id=in-swiper>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div id="s-1" style="background: url(images/fs-klasp.jpg)" class="swiper-slide"></div>
