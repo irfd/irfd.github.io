@@ -129,7 +129,6 @@ header, #header-background {
     padding-left: 20px;
     padding-right: 20px;
     vertical-align: middle;
-    font-size: 1em;
     letter-spacing: 0.035em;
     line-height: 0;
 }
@@ -170,6 +169,7 @@ header, #header-background {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #index-background {
+    padding-top: 90px;
     display: block;
     position: absolute;
     width: 100%;
@@ -177,20 +177,8 @@ header, #header-background {
     z-index: 10;
 }
 
-.index-title {
-    padding-top: 60px;
-    padding-bottom: 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1em;
-    letter-spacing: 0.035em;
-    line-height: 0;
-    opacity: 0.1;
-}
-
 #index-item-half-container {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .index-item-image img {
@@ -227,7 +215,7 @@ header, #header-background {
 }
 
 @media screen and (max-width: 1020px) {
-    .headline-container, .headline-background-image, .headline-colour-overlay {
+    .headline-container, .headline-background-image, .headline-colour-overlay, .hl-colour-overlay-saw {
         height: 100vh!important;
     }
 }
@@ -245,20 +233,19 @@ header, #header-background {
 }
 
 .details-container {
+    min-height: calc(100vh - 279px);
     width: 100%;
-    height: calc(100vh - 189px);
+    padding-top: 60px;
+    padding-bottom: 30px;
     border-top: 1px solid rgba(255,255,255,0.04);
     border-bottom: 1px solid rgba(255,255,255,0.04);
-    overflow: scroll;
     opacity: 0.96;
 }
 
 .com-details-container {
     padding-top: 60px;
     width: 100%;
-    height: 100%;
     border-bottom: 1px solid rgba(255,255,255,0.04);
-    overflow: visible;
     opacity: 0.96;
 }
 
@@ -309,7 +296,7 @@ header, #header-background {
     width: 100%;
     height: 100%;
     background-color: #87857a;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 2;
 }
 
@@ -319,7 +306,7 @@ header, #header-background {
     width: 100%;
     height: 540px;
     background-color: #87857a;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 2;
 }
 
@@ -351,7 +338,6 @@ header, #header-background {
 }
 
 #details-intro-container {
-    padding-top: 60px;
     z-index: 3;
 }
 
@@ -391,7 +377,13 @@ footer {
     z-index: 2;
 }
 
+#enquire-container {
+    display: inline-block;
+    float: left;
+}
+
 #cred-container, .cred-button {
+    display: inline-block;
     float: right;
 }
 
@@ -470,10 +462,6 @@ footer {
     right: 0;
     margin-bottom: -44px;
     z-index: 2;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    width: 50px!important;
 }
 
 .swiper-container {
